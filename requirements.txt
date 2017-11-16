@@ -1,0 +1,9 @@
+jupyter==1.0.0
+jupyter-client==5.1.0
+jupyter-console==5.2.0
+jupyter-core==4.4.0
+matplotlib==1.5.1
+mediacloud==2.43.2
+
+datetime
+configparser

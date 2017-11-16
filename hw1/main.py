@@ -2,7 +2,7 @@ import mediacloud, datetime
 import configparser
 
 config = configparser.ConfigParser()
-config.read('config.ini')
+config.read('../config.ini')
 mc_api_key = config['MEDIACLOUD']['api_key']
 mc = mediacloud.api.MediaCloud(mc_api_key)
 

@@ -1,10 +1,14 @@
 .DS_Store
 
 # virtual environment
-my_venv
+my_venv/
 
 # config INI file
 config.ini
 
 # Jupyter checkpoints
 .ipynb_checkpoints
+
+# IDE files
+.idea/
+hw1/.idea
