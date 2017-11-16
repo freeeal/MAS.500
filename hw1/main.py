@@ -1,5 +1,7 @@
 import mediacloud, datetime
 import configparser
+import matplotlib.pyplot as plt
+import numpy as np
 
 config = configparser.ConfigParser()
 config.read('../config.ini')
@@ -19,3 +21,11 @@ res_2016 = mc.sentenceCount('(abortion)', solr_filter=[mc.publish_date_query(dat
 print(res_2015['count']) #607293
 print(res_2016['count']) #833234
 # "Was abortion talked about more in 2015 or 2016?" --> 2016
+
+objects = ('Trump', 'Clinton')
+y_pos = np.arange(len(objects))
+plt.bar(y_pos, [trump_res['count'], clinton_res['count']], align='center', alpha=0.5)
+plt.xticks(y_pos, objects)
+plt.ylabel('# of Times Mentioned')
+plt.title('Word Frequency of US Mainstream Media in September 2016')
+plt.show()
