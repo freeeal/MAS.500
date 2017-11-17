@@ -12,3 +12,6 @@ config.ini
 # IDE files
 .idea/
 hw1/.idea
+
+# log files
+hw2/logs.txt
