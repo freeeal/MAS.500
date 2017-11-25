@@ -3,8 +3,9 @@
 # virtual environment
 my_venv/
 
-# config INI file
+# config files
 config.ini
+hw3/settings.config
 
 # Jupyter checkpoints
 .ipynb_checkpoints
@@ -18,3 +19,6 @@ hw2/logs.txt
 
 # cached files
 hw2/__pycache__/
+
+# examples
+MediaCloud-Flask-Example/
